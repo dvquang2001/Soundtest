@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giấc ngủ bé " />
+
+        <TextView
+            android:textStyle="bold"
+            android:text="THIÊN NHIÊN"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow>
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/btnRain"
+                    android:background="@drawable/drawable_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/raincloud" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnForest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/forest" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnWave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/wave" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btnWaterFlow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_button"
+                    app:srcCompat="@drawable/waterflow" />
+            </TableRow>
+
+            <TableRow>
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnCrikets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/crikets" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnFire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/fire" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnHerat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/heart" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:text="GIAO THÔNG "
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow>
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/car" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnTruck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/truck" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnTrain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/train" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnPlane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/plane" />
+
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:textStyle="bold"
+            android:text="HỘ GIA ĐÌNH "
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow>
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnWashingMachine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/wsmachine" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnVacuumCleaner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/vacuumcleaner" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/clock" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnRaido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/raido" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnHairDryer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/hairdryer" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnFan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/fan" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnShower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/shower" />
+
+                <ImageButton
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/drawable_button"
+                    android:id="@+id/btnCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/cat" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:text="TIẾNG ỒN TRẮNG "
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/drawable_button"
+            android:id="@+id/btnSoundwaves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/soundwave" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
