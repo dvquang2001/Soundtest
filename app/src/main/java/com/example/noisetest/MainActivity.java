@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     int position = 0;
     String title = "";
+    String check = "";
     ArrayList<Audio> listAudio ;
 
 
@@ -34,28 +35,44 @@ public class MainActivity extends AppCompatActivity {
         addEvents();
         addAudio();
         setMediaPlayer();
-
-
     }
 
     private void setMediaPlayer() {
-        for(int i=0; i<listAudio.size(); i++) {
-            if(listAudio.get(i).getKey().equals(title)) {
-                position = i;
+        if(mediaPlayer == null) {
+            for(int i=0; i<listAudio.size(); i++) {
+                if(listAudio.get(i).getKey().equals(title)) {
+                    check = listAudio.get(i).getKey();
+                    position = i;
+                }
+            }
+            mediaPlayer = MediaPlayer.create(MainActivity.this,listAudio.get(position).getFile());
+        }
+        else {
+            if(check.equals(title)) {
+
+            }
+            else {
+                if(mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+                }
+                for(int i=0; i<listAudio.size(); i++) {
+                    if(listAudio.get(i).getKey().equals(title)) {
+                        check = listAudio.get(i).getKey();
+                        position = i;
+                    }
+                }
+                mediaPlayer = MediaPlayer.create(MainActivity.this,listAudio.get(position).getFile());
             }
         }
-        mediaPlayer = MediaPlayer.create(MainActivity.this,listAudio.get(position).getFile());
     }
 
     private void setPlayMedia() {
+        mediaPlayer.setLooping(true);
         if (mediaPlayer.isPlaying()) {
-            mediaPlayer.stop();
-            String stop = "true";
-            Log.d("MediaPlayerstop",stop);
+            mediaPlayer.pause();
         }
         else {
-            String play = "false";
-            Log.d("MediaPlayerplay",play);
             mediaPlayer.start();
         }
     }
@@ -110,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+
        btnCloudRain.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
